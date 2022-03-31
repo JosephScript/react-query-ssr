@@ -27,7 +27,7 @@ const MyApp = (ctx: AppPropsWithLayout) => {
         refetchInterval: fiveMinutes,
         // setting it so that data is always fetched every refetchInterval
         retry: false,
-        refetchOnWindowFocus: true,
+        refetchOnWindowFocus: false,
         refetchOnMount: false,
         refetchIntervalInBackground: true,
         refetchOnReconnect: 'always',
