@@ -27,11 +27,11 @@ const MyApp = (ctx: AppPropsWithLayout) => {
         refetchInterval: fiveMinutes,
         // setting it so that data is always fetched every refetchInterval
         retry: false,
-        refetchOnWindowFocus: false,
+        refetchOnWindowFocus: true,
         refetchOnMount: false,
         refetchIntervalInBackground: true,
         refetchOnReconnect: 'always',
-        // staleTime: Infinity, // data will never be considered stale
+        staleTime: 0, // data will always be considered stale
       },
     },
   }))
